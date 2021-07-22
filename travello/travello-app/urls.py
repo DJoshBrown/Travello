@@ -1,4 +1,4 @@
-from django.urls import path #This import allows us to use the path function(within urlpatterns)
+from django.urls import path#This import allows us to use the path function(within urlpatterns)
 from . import views #This will import our view.py module from the main project directory
 
 
@@ -9,7 +9,6 @@ path() will allow us to create a url for a specified view
 Note that more documention on views can be found in the main project directory 'tutorial_1'
 """
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('add', views.add, name="add")
+    path('', views.index, name='index')
 
 ]
